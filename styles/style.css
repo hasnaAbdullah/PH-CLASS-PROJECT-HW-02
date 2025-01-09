@@ -29,7 +29,7 @@ section {
 }
 header#home {
   background: linear-gradient(
-    180deg,
+    0deg,
     rgba(119, 119, 119, 0),
     rgba(75, 75, 75, 0.644),
     rgba(119, 119, 119, 0)
@@ -345,7 +345,15 @@ form .btn-primary {
   flex-direction: column;
   justify-content: end;
   border-radius: 18px;
+  & > p,
+  h4 {
+    padding: 1px 15px;
+  }
+  & > p {
+    padding-bottom: 15px;
+  }
 }
+
 .team-1 {
   background-image: linear-gradient(
       180deg,
@@ -393,4 +401,36 @@ form .btn-primary {
       rgba(0, 0, 0, 0.582)
     ),
     url("../images/trainer6.png");
+}
+
+/* footer styles */
+footer {
+  width: 1240px;
+  margin: 100px auto;
+  margin-bottom: 200px;
+  background-color: var(--darkLightTwo);
+  padding: 50px 180px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 4px;
+}
+
+footer .description {
+  width: 400px;
+  & > h3 {
+    font-size: 48px;
+    color: var(--orangeColor);
+    margin-bottom: 20px;
+  }
+}
+.footer-link h3 {
+  font-size: 24px;
+}
+.footer-link ul li {
+  list-style: none;
+  margin-top: 20px;
+  & > a {
+    text-decoration: none;
+    color: var(--darkLight);
+  }
 }
