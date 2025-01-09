@@ -56,6 +56,7 @@ h3 {
   font-weight: 700;
   color: var(--whiteHero);
   border: none;
+  cursor: pointer;
 }
 .download {
   background-color: transparent;
@@ -192,11 +193,14 @@ nav li a[href="#home"] {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  display: flex;
+  justify-content: start;
+  align-items: end;
 }
 .exercise p {
   color: #fff;
   width: 180px;
-  transform: translate(20%, 50%);
+  padding-bottom: 30px;
 }
 .small {
   width: 250px;
@@ -242,4 +246,62 @@ nav li a[href="#home"] {
       rgba(0, 71, 255, 50%)
     ),
     url("../images/exercise6.jpg");
+}
+
+/* BMI calculator style */
+.calculator-description {
+  text-align: center;
+}
+.calculator-container {
+  margin: 50px 0;
+  display: flex;
+  background-color: var(--darkLightTwo);
+  column-gap: 100px;
+  padding: 60px 50px 60px 150px;
+}
+.calculator-chart {
+  width: 310px;
+}
+.calculator-chart table {
+  border-collapse: collapse;
+  margin-top: 50px;
+}
+td,
+th {
+  border: 1px solid var(--darkLight);
+  padding: 8px 15px;
+  font-size: 14px;
+  white-space: nowrap;
+  color: var(--darkLight);
+  text-align: left;
+}
+.calculator {
+  width: 670px;
+}
+.calculator p {
+  margin: 30px 0;
+  font-size: 14px;
+}
+.calculator form > input,
+select,
+option {
+  width: 220px;
+  padding: 9px 15px;
+  background-color: rgba(255, 255, 255, 10%);
+  border: none;
+  outline: none;
+  margin: 5px 5px 5px 0;
+  color: rgba(255, 255, 255, 60%);
+  border-radius: 5px;
+}
+
+option {
+  color: black;
+}
+#activity {
+  width: 100%;
+}
+form .btn-primary {
+  padding: 10px 25px;
+  margin-top: 10px;
 }
