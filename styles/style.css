@@ -251,6 +251,10 @@ nav li a[href="#home"] {
 /* BMI calculator style */
 .calculator-description {
   text-align: center;
+  & > p {
+    width: 600px;
+    margin: 20px auto;
+  }
 }
 .calculator-container {
   margin: 50px 0;
@@ -270,10 +274,14 @@ td,
 th {
   border: 1px solid var(--darkLight);
   padding: 8px 15px;
-  font-size: 14px;
+  font-size: 13px;
   white-space: nowrap;
   color: var(--darkLight);
   text-align: left;
+}
+th {
+  color: rgba(255, 255, 255, 75%);
+  font-size: 15px;
 }
 .calculator {
   width: 670px;
@@ -285,7 +293,7 @@ th {
 .calculator form > input,
 select,
 option {
-  width: 220px;
+  width: 48%;
   padding: 9px 15px;
   background-color: rgba(255, 255, 255, 10%);
   border: none;
@@ -299,9 +307,90 @@ option {
   color: black;
 }
 #activity {
-  width: 100%;
+  width: 98%;
 }
 form .btn-primary {
   padding: 10px 25px;
   margin-top: 10px;
+}
+
+/* trainer styles */
+.team-member {
+  width: 1060px;
+
+  margin-top: 100px;
+}
+.team-description {
+  text-align: center;
+  & > p {
+    margin: 30px 0;
+  }
+}
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 25px;
+  background-color: var(--darkLightTwo);
+  gap: 15px;
+  border-radius: 14px;
+}
+.member {
+  width: 320px;
+  height: 270px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  border-radius: 18px;
+}
+.team-1 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.099),
+      rgba(0, 0, 0, 0.582)
+    ),
+    url("../images/trainer1.png");
+}
+.team-2 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.434),
+      rgba(0, 0, 0, 0.582)
+    ),
+    url("../images/trainer2.png");
+}
+.team-3 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.434),
+      rgba(0, 0, 0, 0.582)
+    ),
+    url("../images/trainer3.png");
+}
+.team-4 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.434),
+      rgba(0, 0, 0, 0.582)
+    ),
+    url("../images/trainer4.png");
+}
+.team-5 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.434),
+      rgba(0, 0, 0, 0.582)
+    ),
+    url("../images/trainer5.png");
+}
+.team-6 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.434),
+      rgba(0, 0, 0, 0.582)
+    ),
+    url("../images/trainer6.png");
 }
