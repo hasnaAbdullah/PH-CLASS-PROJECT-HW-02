@@ -21,6 +21,7 @@ body:not(i) {
   --orangeColor: rgb(230, 83, 60);
   --whiteColor: rgb(255, 255, 255);
   --darkLight: rgb(255, 255, 255, 50%);
+  --darkLightTwo: #222222;
 }
 section {
   max-width: 1044px;
@@ -144,8 +145,33 @@ nav li a[href="#home"] {
 }
 .habit img {
   border-radius: 50%;
+  object-fit: cover;
 }
 .habit h4 {
   margin-top: 30px;
   margin-bottom: 10px;
+}
+/* run section style */
+
+.run-exercise {
+  margin: 100px auto;
+  padding: 50px;
+  background-color: var(--darkLightTwo);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+}
+.run-exercise .run-about {
+  width: 443px;
+}
+.run-about p {
+  margin: 20px 0 30px 0;
+}
+.run-img {
+  width: 366px;
+  border-radius: 18px;
+  background-image: url("../images/run.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
