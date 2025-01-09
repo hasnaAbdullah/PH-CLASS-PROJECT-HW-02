@@ -11,7 +11,141 @@ html,
 body {
   width: 100%;
   height: 100%;
+  color: #fff;
 }
 body:not(i) {
   font-family: "Inter", serif;
+  background-color: #000000;
+}
+:root {
+  --orangeColor: rgb(230, 83, 60);
+  --whiteColor: rgb(255, 255, 255);
+  --darkLight: rgb(255, 255, 255, 50%);
+}
+section {
+  max-width: 1044px;
+  margin: 0 auto;
+}
+header#home {
+  background: linear-gradient(
+    180deg,
+    rgba(119, 119, 119, 0),
+    rgba(75, 75, 75, 0.644),
+    rgba(119, 119, 119, 0)
+  );
+}
+p {
+  font-size: 15px;
+  color: var(--darkLight);
+}
+h2 {
+  font-size: 48px;
+}
+h4 {
+  font-size: 18px;
+}
+h3 {
+  font-size: 28px;
+}
+.btn-primary {
+  padding: 16px 43px;
+  font-size: 16px;
+  background-color: var(--orangeColor);
+  border-radius: 42px;
+  font-weight: 700;
+  color: var(--whiteHero);
+  border: none;
+}
+.download {
+  background-color: transparent;
+  border: 1px solid white;
+  margin-left: 15px;
+}
+.hero {
+  margin: 0 auto;
+}
+nav {
+  padding-top: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .logo {
+  color: var(--orangeColor);
+  font-size: 36px;
+  font-weight: 800;
+}
+nav ul {
+  display: flex;
+  column-gap: 45px;
+  align-items: center;
+  border: 1px solid var(--darkLight);
+  border-radius: 39px;
+  padding: 10px 5px;
+}
+nav ul li {
+  list-style: none;
+}
+nav li a {
+  text-decoration: none;
+  color: var(--darkLight);
+  font-size: 18px;
+  padding: 5px 15px;
+}
+nav li a[href="#home"] {
+  background-color: var(--orangeColor);
+  border-radius: 46px;
+  color: var(--whiteColor);
+}
+/* banner style */
+.banner {
+  padding-top: 30px;
+  display: flex;
+  /* column-gap: 85px; */
+  justify-content: space-between;
+}
+
+.banner-content {
+  padding-top: 50px;
+  width: 600px;
+}
+.banner-content h1 {
+  font-size: 78px;
+  line-height: -300px;
+}
+.banner-content .heading-style {
+  font-style: italic;
+  color: var(--orangeColor);
+}
+.banner-content p {
+  margin: 28px 42px 28px 0;
+}
+
+/* guideline style */
+.guideline {
+  margin-top: 100px;
+}
+.guideline .habit-intro {
+  text-align: center;
+}
+.habit-intro > p {
+  width: 500px;
+  margin: 20px auto 60px auto;
+}
+.habits {
+  display: flex;
+  column-gap: 40px;
+}
+.habits .habit {
+  text-align: center;
+  padding: 15px 8px;
+  box-shadow: 1px 1px 10px 4px rgba(128, 128, 128, 0.171);
+  border-radius: 10px;
+}
+.habit img {
+  border-radius: 50%;
+}
+.habit h4 {
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
