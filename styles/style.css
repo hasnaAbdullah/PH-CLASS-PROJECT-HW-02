@@ -175,3 +175,71 @@ nav li a[href="#home"] {
   background-size: cover;
   background-repeat: no-repeat;
 }
+/* all exercise styles */
+.all-exercise {
+  margin: 100px auto;
+}
+.all-exercise .exercise-intro p {
+  margin: 20px 0 50px 0;
+  width: 600px;
+}
+.exercises {
+  display: flex;
+  flex-wrap: wrap;
+}
+.exercise {
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.exercise p {
+  color: #fff;
+  width: 180px;
+  transform: translate(20%, 50%);
+}
+.small {
+  width: 250px;
+  color: #000000;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 110, 255, 0.3),
+      rgba(0, 106, 255, 0.33)
+    ),
+    url("../images/exercise1.jpg");
+}
+.exercise-2 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(6, 9, 13, 0.3),
+      rgba(14, 15, 15, 0.774)
+    ),
+    url("../images/exercise3.png");
+}
+.extra-large {
+  width: 539px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(255, 0, 0, 30%),
+      rgba(255, 0, 0, 0.33)
+    ),
+    url("../images/exercise2.png");
+}
+.large {
+  width: 442px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 50%),
+      rgba(0, 0, 0, 50%)
+    ),
+    url("../images/exercise4.png");
+}
+.medium {
+  width: 347px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 71, 255, 50%),
+      rgba(0, 71, 255, 50%)
+    ),
+    url("../images/exercise6.jpg");
+}
